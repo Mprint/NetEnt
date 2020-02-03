@@ -56,23 +56,4 @@ module.exports = {
     I.click(this.selector.startBtn);
   },
 
-  
-
-
-  seeBigWinResult() {
-    I.click(this.selector.startBtn);
-    I.seeInField(this.selector.result, this.result.bigWin);
-  },
-
-  seeSmallWinResult() {
-    // I.sendGetRequest("/outcome.json");
-
-    I.sendPostRequest("/outcome.json", { value: [2, 3, 3] });
-    I.seeInField(this.selector.result, this.result.smallWin);
-  },
-
-  seeNoWinResult() {
-    I.click(this.selector.startBtn);
-    I.seeInField(this.selector.result, this.result.noWin);
-  }
 };

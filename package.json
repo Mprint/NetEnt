@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx codeceptjs run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Serhii Buriachenko",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "codeceptjs": "^2.4.3"
   },
   "devDependencies": {
     "selenium-standalone": "^6.17.0"
